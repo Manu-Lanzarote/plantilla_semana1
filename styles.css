@@ -1,0 +1,184 @@
+/* Estilos generales */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header,
+main {
+  background-color: rgba(4, 42, 255, 0.192);
+  padding: 0 25px 25px;
+}
+
+/* Estilos del header */
+header {
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+nav {
+  background-color: rgb(210, 42, 30);
+  padding: 15px;
+  border-radius: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+nav a:hover {
+  color: rgb(211, 211, 211);
+}
+
+/* Estilos del hero */
+.frase_inicio {
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  padding: 40px 10%;
+}
+#hero {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/* Estilos títulos h2 */
+.titulos {
+  text-align: center;
+  margin: 35px 0px 20px;
+}
+h2 {
+  background-color: rgb(210, 42, 30);
+  color: white;
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* Estilos OUR SERVICES */
+section {
+  padding: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  display: inline;
+}
+.servicios {
+  padding: 0 30px;
+}
+.servicios a,
+.players a {
+  text-decoration: none;
+  color: rgb(210, 42, 30);
+}
+.servicios a:hover,
+.players a:hover {
+  color: rgb(170, 34, 24);
+}
+
+/* Estilos OUR PLAYERS */
+.players {
+  width: 20%;
+  padding: 10px;
+}
+.players img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/* Estilos LATEST WORK */
+.latest img {
+  min-width: 31%;
+  max-width: 31%;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: rgb(153, 151, 151);
+  padding: 25px;
+}
+h5 {
+  color: rgb(210, 42, 30);
+}
+.pie_principal {
+  display: flex;
+}
+.pie_princ_sec1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+.pie1 {
+  display: flex;
+}
+.pie1 img {
+  max-width: 25%;
+  padding-bottom: 10px;
+}
+.pie1 div {
+  padding: 15px;
+}
+.pie_princ_sec2,
+.pie_princ_sec3 {
+  max-width: 22%;
+  padding: 0 10px;
+}
+#bloque {
+  display: block;
+}
+.creditos {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  header {
+    flex-wrap: wrap;
+  }
+  nav {
+    margin: 10px auto;
+  }
+  nav a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    flex-wrap: wrap;
+  }
+  section .servicios {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .our_players .players {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .pie_princ_sec3 {
+    display: none;
+  }
+  .pie_princ_sec2 {
+    max-width: 30%;
+  }
+  .pie_princ_sec1 {
+    min-width: 60%;
+  }
+  .pie1 img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
